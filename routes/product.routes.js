@@ -3,8 +3,8 @@ const { productController } = require("../controllers/product.controllers");
 const router = Router();
 
 router.post("/admin/products", productController.createProduct);
-router.patch("/admin/products", productController.patchProduct);
-router.delete("/admin/products", productController.deleteProduct);
+router.patch("/admin/products/:id", productController.patchProduct);
+router.delete("/admin/products/:id", productController.deleteProduct);
 router.get(
   "/users/products/categories/:id",
   productController.getProductsByCat

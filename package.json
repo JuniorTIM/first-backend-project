@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.18.1",
-    "mongoose": "^6.3.5",
     "nodemon": "^2.0.16",
     "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
   }
 }

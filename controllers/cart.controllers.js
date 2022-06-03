@@ -3,7 +3,7 @@ const Cart = require("../models/Cart.model");
 module.exports.cartControllers = {
   createCart: async (req, res) => {
     try {
-      const cart = await Cart.create({ user: req.body.id });
+      const cart = await Cart.create({ user: req.body.user });
       res.json(cart);
     } catch (error) {
       res.json(error.message);

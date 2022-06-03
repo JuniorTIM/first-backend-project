@@ -7,9 +7,9 @@ module.exports.productController = {
       await Product.create({
         product: req.body.product,
         category: req.body.category,
-        brand: req.body.category,
+        brand: req.body.brand,
       });
-      res.json("продукт удален");
+      res.json("продукт добавлен");
     } catch (err) {
       res.json(err.message);
     }
@@ -55,7 +55,7 @@ module.exports.productController = {
       await Product.findByIdAndUpdate(req.params.id, {
         product: req.body.product,
         category: req.body.category,
-        brand: req.body.category,
+        brand: req.body.brand,
       });
       res.json("Продукт изменен");
     } catch (err) {

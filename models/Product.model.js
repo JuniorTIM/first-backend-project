@@ -7,7 +7,7 @@ const productsSchema = mongoose.Schema({
         type: mongoose.SchemaTypes.ObjectId
     },
     brand: {
-        ref: ('Brand'),
+        ref: 'Brand',
         type: mongoose.SchemaTypes.ObjectId
     }
 
