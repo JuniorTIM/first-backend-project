@@ -1,1 +1,5 @@
-const u = 123
+const mongoose = require("mongoose");
+
+const userSchema = mongoose.Schema ({
+    name: String,
+})
