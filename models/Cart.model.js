@@ -7,12 +7,11 @@ const cartSchema = mongoose.Schema({
       type: mongoose.SchemaTypes.ObjectId,
     },
   ],
-  user: [
+  user: 
     {
       ref: "user",
       type: mongoose.SchemaTypes.ObjectId,
     },
-  ],
 });
 
 const Cart = mongoose.model("Cart", cartSchema);

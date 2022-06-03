@@ -10,7 +10,7 @@ app.use(require('./routes/index'))
 
 mongoose
   .connect(
-    "mongodb+srv://Amir:intocode@cluster0.gzzxb.mongodb.net/INTOCODE?retryWrites=true&w=majority"
+    "mongodb+srv://Amir:intocode@cluster0.gzzxb.mongodb.net/Teamproject?retryWrites=true&w=majority"
   )
   .then(() => console.log("Успешно соединились с MongoDB"))
   .catch(() => console.log("Ошибка при соединии с сервером"));

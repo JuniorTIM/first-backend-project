@@ -4,7 +4,7 @@ module.exports.categoryController = {
   createCategory: async (req, res) => {
     try {
       await Category.create({
-        category: req.model.category,
+        category: req.body.category,
       });
       res.json("Категория создана");
     } catch (err) {
